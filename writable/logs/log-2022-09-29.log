@@ -1,0 +1,378 @@
+CRITICAL - 2022-09-29 08:01:13 --> Class "App\Models\AddfishModel" not found
+in APPPATH\Controllers\Add_fish.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:01:49 --> Class "App\Models\AddfishModel" not found
+in APPPATH\Controllers\Add_fish.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-29 08:02:21 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\hoctap\Xampp\htdocs\Shop\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\hoctap\Xampp\htdocs\Shop\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\hoctap\Xampp\htdocs\Shop\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\hoctap\Xampp\htdocs\Shop\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\hoctap\Xampp\htdocs\Shop\app\Controllers\Add_fish.php(80): CodeIgniter\BaseModel->find()
+#7 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+#8 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+#9 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\hoctap\Xampp\htdocs\Shop\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\hoctap\Xampp\htdocs\Shop\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\hoctap\Xampp\htdocs\Shop\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\hoctap\Xampp\htdocs\Shop\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#5 D:\hoctap\Xampp\htdocs\Shop\app\Controllers\Add_fish.php(80): CodeIgniter\BaseModel->find()
+#6 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+#7 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+#8 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\hoctap\Xampp\htdocs\Shop\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-29 08:02:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `type_fish`', [], false)
+ 3 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 5 APPPATH\Controllers\Add_fish.php(80): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-29 08:02:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\hoctap\Xampp\htdocs\Shop\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\hoctap\Xampp\htdocs\Shop\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\hoctap\Xampp\htdocs\Shop\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\hoctap\Xampp\htdocs\Shop\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\hoctap\Xampp\htdocs\Shop\app\Controllers\Add_fish.php(80): CodeIgniter\BaseModel->find()
+#7 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+#8 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+#9 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\hoctap\Xampp\htdocs\Shop\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\hoctap\Xampp\htdocs\Shop\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\hoctap\Xampp\htdocs\Shop\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\hoctap\Xampp\htdocs\Shop\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#5 D:\hoctap\Xampp\htdocs\Shop\app\Controllers\Add_fish.php(80): CodeIgniter\BaseModel->find()
+#6 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+#7 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+#8 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\hoctap\Xampp\htdocs\Shop\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-29 08:02:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `type_fish`', [], false)
+ 3 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 5 APPPATH\Controllers\Add_fish.php(80): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-29 08:02:56 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\hoctap\Xampp\htdocs\Shop\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\hoctap\Xampp\htdocs\Shop\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\hoctap\Xampp\htdocs\Shop\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\hoctap\Xampp\htdocs\Shop\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\hoctap\Xampp\htdocs\Shop\app\Controllers\Add_fish.php(80): CodeIgniter\BaseModel->find()
+#7 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+#8 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+#9 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\hoctap\Xampp\htdocs\Shop\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\hoctap\Xampp\htdocs\Shop\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\hoctap\Xampp\htdocs\Shop\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\hoctap\Xampp\htdocs\Shop\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\hoctap\Xampp\htdocs\Shop\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#5 D:\hoctap\Xampp\htdocs\Shop\app\Controllers\Add_fish.php(80): CodeIgniter\BaseModel->find()
+#6 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+#7 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+#8 D:\hoctap\Xampp\htdocs\Shop\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\hoctap\Xampp\htdocs\Shop\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-29 08:02:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `type_fish`', [], false)
+ 3 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 5 APPPATH\Controllers\Add_fish.php(80): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:03:34 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 53.
+ 1 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(137): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Add_fish.php(16): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:03:36 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 53.
+ 1 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(137): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Add_fish.php(16): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:03:50 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 53.
+ 1 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(137): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Add_fish.php(16): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:03:51 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 53.
+ 1 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(137): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Add_fish.php(16): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:03:51 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 53.
+ 1 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(137): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Add_fish.php(16): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:03:51 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 53.
+ 1 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(137): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Add_fish.php(16): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:04:14 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 53.
+ 1 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(137): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Add_fish.php(16): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:07:12 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 53.
+ 1 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(137): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\Add_fish.php(16): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:08:15 --> Class "CodeIgniter\Database\MySql\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('MySql', 'CodeIgniter\\Database\\MySql\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(137): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\Add_fish.php(16): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:08:24 --> Class "CodeIgniter\Database\Mysql\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('Mysql', 'CodeIgniter\\Database\\Mysql\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(137): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\Add_fish.php(16): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:08:25 --> Class "CodeIgniter\Database\Mysql\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('Mysql', 'CodeIgniter\\Database\\Mysql\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(137): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\Add_fish.php(16): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:25:03 --> syntax error, unexpected token "class", expecting "," or ";"
+in APPPATH\Controllers\Signup.php on line 7.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('/signup')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('/signup')
+ 3 SYSTEMPATH\CodeIgniter.php(782): CodeIgniter\Router\Router->handle('/signup')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:25:28 --> syntax error, unexpected token "class", expecting "," or ";"
+in APPPATH\Controllers\Signup.php on line 7.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('/signup')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('/signup')
+ 3 SYSTEMPATH\CodeIgniter.php(782): CodeIgniter\Router\Router->handle('/signup')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:26:33 --> syntax error, unexpected token "class", expecting "," or ";"
+in APPPATH\Controllers\Signup.php on line 7.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('/signup')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('/signup')
+ 3 SYSTEMPATH\CodeIgniter.php(782): CodeIgniter\Router\Router->handle('/signup')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:27:46 --> Allowed fields must be specified for model: App\Models\userDB
+in SYSTEMPATH\BaseModel.php on line 1139.
+ 1 SYSTEMPATH\BaseModel.php(1139): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\userDB')
+ 2 SYSTEMPATH\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\Signup.php(72): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Signup->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:28:30 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\Signup.php on line 21.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('/signup')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('/signup')
+ 3 SYSTEMPATH\CodeIgniter.php(782): CodeIgniter\Router\Router->handle('/signup')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:28:47 --> Allowed fields must be specified for model: App\Models\userDB
+in SYSTEMPATH\BaseModel.php on line 1139.
+ 1 SYSTEMPATH\BaseModel.php(1139): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\userDB')
+ 2 SYSTEMPATH\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\Signup.php(72): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Signup->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:29:37 --> Allowed fields must be specified for model: App\Models\userDB
+in SYSTEMPATH\BaseModel.php on line 1139.
+ 1 SYSTEMPATH\BaseModel.php(1139): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\userDB')
+ 2 SYSTEMPATH\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\Signup.php(72): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Signup->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:44:17 --> Call to undefined method App\Models\userDB::getNumRows
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Signup.php(72): CodeIgniter\Model->__call('getNumRows', [])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Signup->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:44:26 --> Call to undefined method App\Models\userDB::getNumRows
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Signup.php(72): CodeIgniter\Model->__call('getNumRows', [])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Signup->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:45:10 --> Call to undefined method App\Models\userDB::getRows
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Signup.php(72): CodeIgniter\Model->__call('getRows', [])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Signup->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:45:38 --> Call to undefined method App\Models\userDB::getNumRows
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Signup.php(72): CodeIgniter\Model->__call('getNumRows', [])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Signup->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:47:25 --> Call to undefined function App\Controllers\to()
+in APPPATH\Controllers\Signup.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Signup->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:50:45 --> Array to string conversion
+in APPPATH\Controllers\Signup.php on line 76.
+ 1 APPPATH\Controllers\Signup.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Signup.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Signup->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 08:51:37 --> Array to string conversion
+in APPPATH\Controllers\Signup.php on line 77.
+ 1 APPPATH\Controllers\Signup.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Signup.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Signup->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 09:04:42 --> Undefined variable $db
+in APPPATH\Controllers\Signup.php on line 73.
+ 1 APPPATH\Controllers\Signup.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\Signup.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Signup->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 09:08:06 --> Undefined variable $session
+in APPPATH\Controllers\Signup.php on line 14.
+ 1 APPPATH\Controllers\Signup.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Signup.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Signup->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 09:13:25 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\login_view.php on line 37.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-29 09:14:25 --> Undefined variable $page_sesion
+in APPPATH\Views\login_view.php on line 38.
+ 1 APPPATH\Views\login_view.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page_sesion', 'APPPATH\\Views\\login_view.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('login_view', [], true)
+ 5 APPPATH\Controllers\Login.php(35): view('login_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

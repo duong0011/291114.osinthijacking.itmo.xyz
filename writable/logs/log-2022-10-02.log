@@ -1,0 +1,22 @@
+CRITICAL - 2022-10-02 10:21:49 --> Trying to access array offset on value of type null
+in APPPATH\Views\ListFish.php on line 22.
+ 1 APPPATH\Views\ListFish.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\ListFish.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ListFish.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('ListFish', [], true)
+ 5 APPPATH\Controllers\Add_fish.php(80): view('ListFish')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 10:22:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\ListFish.php on line 22.
+ 1 APPPATH\Views\ListFish.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\ListFish.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ListFish.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('ListFish', [], true)
+ 5 APPPATH\Controllers\Add_fish.php(80): view('ListFish')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Add_fish->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_fish))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
