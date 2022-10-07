@@ -1,0 +1,154 @@
+.page-login{
+    background-color: var(--white-color);
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    /* padding: 20px 0; */
+    background-color: var(--primary-color);
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 250px;
+    height: 250px;
+}
+
+.logo-img{
+    width: 100%;
+}
+
+.navbar__item {
+    background-color: var(--primary-color);
+    font-size: 1.8rem;
+    border-radius: 20px;
+    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    color: var(--white-color);
+}
+
+.navbar__item-contact {
+    padding: 0 10px 0 15px;
+}
+
+.navbar__item-contact-link {
+    padding-right: 12px;
+    text-decoration: none;
+    color: #fff5f5;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar__item-contact-link:hover{
+    opacity: 0.9;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container__box{
+    background-color: var(--white-color);
+    padding: 40px;
+    border-radius: 15px;
+    /* margin-top: 30px; */
+    margin: 30px 0;
+    text-align: center;
+    width: 25%;
+    min-width: 320px;
+    /* box-shadow: 0 0 5px var(--primary-color); */
+    border: 3px solid var(--primary-color);
+}
+
+.container__box h2{
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.form-input{
+    display: block;
+    width: 100%;
+    margin: 14px 0;
+    padding: 14px;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form-input:focus{
+    border: 1px solid var(--primary-color);
+}
+
+.login-pass-forget{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 5px 0 20px;
+    color: var(--black-color);
+}
+
+.login-pass-forget:hover{
+    opacity: 0.9;
+}
+
+.form-btn{
+    padding: 12px 0;
+    margin-top: 25px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.95;
+}
+
+.form-nav{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.form-nav-link{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.form-nav-link:hover{
+    opacity: 0.9;
+}
+
+.form-term {
+    display: inline;
+    font-size: 1.4rem;
+}
+
+.form-term input {
+    vertical-align: middle;
+}
+
+.form-term a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.footer {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer-copyright{
+    text-align: center;
+    font-size: 1.4rem;
+}
+

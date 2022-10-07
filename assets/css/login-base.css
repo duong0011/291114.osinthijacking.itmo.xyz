@@ -1,0 +1,48 @@
+:root{
+    --primary-color: #8b3434; 
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* 1 rem = 10px */
+    font-size: 62.5%; 
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.btn{
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+}
