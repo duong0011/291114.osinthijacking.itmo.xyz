@@ -20,7 +20,6 @@ class Signup extends Controller
 		$data['validation'] = NULL;
 		$data['title'] = "Đăng kí";
 		$data['smg'] = NUll;
-		
 		if($this->request->getMethod() == "post") {
 			$rules = [
 				'fullname' => [
@@ -39,10 +38,8 @@ class Signup extends Controller
 				],
 				'username' => [
 					'rules' => 'required|min_length[8]',
-					'errors' =>[
-						'required' => 'Điền tên đăng nhập',
-						'min_length' => 'Tên đăng nhập phải có it nhất 8 kí tự'
-					]
+					'label' => 'Username'
+					
 				],
 				'pass' => [
 					'rules' => 'required|min_length[8]',
@@ -66,6 +63,7 @@ class Signup extends Controller
 					$data['smg'] = "Bạn có đồng ý với điều khoảng dịch vụ";
 					return view('signup', $data);
 				}
+			
 				$tdata = [
        				'fullname' => $this->request->getVar('fullname', FILTER_UNSAFE_RAW),
        				'username' => $this->request->getVar('username', FILTER_UNSAFE_RAW),

@@ -25,10 +25,9 @@ class Login extends Controller
 					]
 				]
 			];
-			if($this->validate($rules)) {
-					
-			} else {
-				$data['validation'] = $this->validator;
+			if(!$this->validate($rules)) {
+				$data['validation'] = $this->validator;	
+				return view('login_view', $data);
 			}
 		}
 		return view('login_view', $data);

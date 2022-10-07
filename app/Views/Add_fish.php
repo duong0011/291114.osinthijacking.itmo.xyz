@@ -1,4 +1,4 @@
-<?php 
+`	<?php 
 	$page_session = \CodeIgniter\Config\Services::session();
  ?>
 <!DOCTYPE html>
